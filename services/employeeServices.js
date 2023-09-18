@@ -4,9 +4,6 @@ const salaryModel = require('../model/salary')
 const departmentModel = require('../model/department')
 const connection = require('../helper/db');
 
-
-
-
 module.exports.list = async (params) => {
     try {
         let postSql = `SELECT dep.id AS departmentId, dep.dep_name AS departmentName, dep.status AS status, emp.username AS userName,
